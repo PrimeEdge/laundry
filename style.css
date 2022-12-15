@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background: #fff;
+}
+#logo{
+    height: 55px;
+    width: 60px;
+}
+.fa{
+    color: #4B56D2;
+    font-size: 40px;
+}
+ul{
+    display: none;
+}
+.hero{
+    width: 100%;
+    height:300px;
+    background-image:  url(./images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #040835;
+    text-align: center;
+}
+.text-box button{
+    margin-top: 40px;
+    height: 50px;
+    width: 120px;
+    font-size: 25px;
+    background: #fff;
+    color: #040835;
+    border-radius: 13px;
+}
+.hero button:hover{
+    background: #040835;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+}
+.company-bg{
+    height: 780px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.company-bg h3{
+    text-align: center;
+    padding: 20px 0px 8px;
+}
+.company-bg p{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    padding: 0px 20px;
+    margin-bottom: 8px;
+}
+.company-bg a{
+    text-decoration: none;
+}
+.box-image{
+    height: 280px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.image img{
+    height: 210px;
+    width: 100%;
+    margin: 8px 0px -1px 20px;
+}
+.image p{
+    color: #272323;
+    font-size: 14px;
+}
