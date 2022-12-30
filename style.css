@@ -79,7 +79,7 @@ nav button:hover{
 
 /*---WHO WE ARE SECTION---*/
 .company-bg{
-    height: 1500px;
+    height: 1350px;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -368,7 +368,7 @@ input:focus{
 }
 .track-it label{
     font-size: 18px;
-    margin: 20px 50px;
+    margin: 10px 50px;
     color: #fff;
     }
 .track-it input{
