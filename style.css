@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 nav{
@@ -23,6 +23,19 @@ nav{
 nav ul{
     display: none;
 }
+nav button{
+    height: 30px;
+    width: 70px;
+    font-size: 14px;
+    border: none;
+    background-color: #db4214;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+nav button:hover{
+    background-color: #86331a;
+}
 /* HERO SECTION */
 .hero{
     width: 100%;
@@ -33,7 +46,7 @@ nav ul{
     position: relative;
 }
 .text-box{
-    width: 90%;
+    width: 70%;
     position: absolute;
     top: 55%;
     left: 50%;
@@ -186,9 +199,9 @@ footer{
     font-size: 20px;
     line-height: 25px;
 }
-ul li{
+.f-nav ul li{
     list-style-type: none;
-    padding: 8px;
+    padding: 5px;
 }
 ul li a{
     text-decoration: none;
@@ -259,6 +272,9 @@ footer p{
     background-position:top;
     background-size:cover;
 }
+.service-header{
+    height: 1140px;
+}
 .service-header h1{
     text-align: center;
     color: #db4214;
@@ -267,13 +283,12 @@ footer p{
 .prices{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     margin-bottom: 20px;
 }
 .pricing{
     width: 100px;
     height: 120px;
-   
     text-align: center;
     background-color: #dadada;
     border-radius: 10px;
@@ -301,15 +316,24 @@ footer p{
 }
 .finput p{
     padding: 0px;
+    font-size: 12px;
 }
 .form{
     width: 360px;
     padding: 30px 0px;
 }
-input{
+.form input{
     width: 80%;
     padding: 5px 10px;
-    margin: 4px;
+    margin: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+#form input{
+    width: 80%;
+    padding: 5px 10px;
+    margin: 6px;
     border: none;
     border-radius: 5px;
     background-color: #f5f5f5;
@@ -317,7 +341,7 @@ input{
 input:focus{
     border: 1px solid #555;
 }
-form button{
+.submit{
     font-size: 16px;
     width: 100px;
     height: 35px;
@@ -326,14 +350,53 @@ form button{
     color: #fff;
     border: none;
     cursor: pointer; 
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
-form button:hover{
+.submit:hover{
     background-color: #fff;
     color: #db4214;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #ccc;
     transition: 0.9s;
 }
+.track-it{
+    width: 80%;
+   margin: auto;
+    background-color: #db4214;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+.track-it label{
+    font-size: 18px;
+    margin: 20px 50px;
+    color: #fff;
+    }
+.track-it input{
+    width: 185px;
+    height: 30px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 40px;
+}
+.track-it button{
+    margin-top: 15px;
+    margin-left: 90px;
+    height: 30px;
+    width: 80px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #db4214;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.track-it button:hover{
+    color: #db4214;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
 
 
 @media (min-width: 768px) {
@@ -343,7 +406,7 @@ form button:hover{
         box-sizing: border-box;
     }
     nav{
-        height: 80px;
+        height: 70px;
     }
     #logo{
         height: 70px;
@@ -359,13 +422,18 @@ form button:hover{
     .nav-links li{
         font-size: 30;
         padding-right: 50px;
+        list-style-type: none;
     }
     .nav-links li a{
         font-size: 18px;
         font-weight: 600;
     }
+    nav button{
+        height: 40px;
+        width: 100px;
+    }
     .hero{
-        height: 600px;
+        height: 500px;
     }
     .text-box{
         top: 48%;
@@ -413,7 +481,6 @@ form button:hover{
     }
     .image p{
         font-size: 18px;
-        padding-left: 100px;
     }
     .card-box{
         width: 1200px;
@@ -444,16 +511,16 @@ form button:hover{
     .question{
         height: 200px;
     }
-    .question h1{
-        font-size: 30px;
+    .question h3{
+        font-size: 25px;
         margin: 35px 0px 10px;
     }
     .question p{
-        font-size: 20px;
-        margin-bottom: 15px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
     .question-btn{
-        padding: 12px 34px;
+        padding: 12px 24px;
         font-size: 20px;
         font-weight: 800;
     }
@@ -476,7 +543,7 @@ form button:hover{
         padding-left: 0px;
     }
     .company h2{
-        font-size: 25px;  
+        font-size: 20px;  
     }
     .company p{
         font-size: 20px;
@@ -487,19 +554,17 @@ form button:hover{
         font-size: 25px;
     }
     .f-nav h2{
-        font-size: 25px;
-    }
-    ul li{
         font-size: 20px;
     }
+    .f-nav ul{
+        font-size: px;
+    }
     #c-us{
-        width: 450px;
-        display: block;
-        
+        width: 450px;        
         margin-top: 0px;
     }
     #c-us h2{
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 15px;
     }
     .addy{
@@ -541,15 +606,19 @@ form button:hover{
     .services{
         height: 675px;
     }
+    .service-header{
+        height: 1150px;
+    }
     .service-header h1{
         font-size: 35px;
+        margin-top: 30px 0;
     }
     .prices{
-        margin-right: 50px;
+        justify-content:space-evenly;
     }
     .pricing{
-        flex-basis: 40%;
-        margin: 30px;
+        width: 200px;
+        height: 140px;
     }
     .pricing h2{
         font-size: 25px;
@@ -567,25 +636,57 @@ form button:hover{
         font-size: 25px;
         color: #db4214;
     }
+    .finput p{
+        font-size: 16px;
+    }
     .form{
         width: 600px;
+        margin-top: 115px;
     }
     #form{
         width: 600px;
-        margin-top: 90px;
+        margin-top: 60px;
     }
-    input{
+    .form input{
         padding: 15px 25px;
         margin: 5px;
         border-radius: 8px;
         font-size: 20px;
     }
-    form button{
+    #form input{
+        padding: 15px 25px;
+        margin: 5px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+    .submit{
         font-size: 20px;
         width: 150px;
         height: 50px;
         border-radius: 10px;
     }
-
+    .track-it{
+        width: 600px;
+        margin: auto;
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .track-it label{
+        font-size: 22px;
+        margin: 20px 10px;
+    }
+    .track-it input{
+        height: 35px;
+        width: 285px;
+        padding: 2px 4px;
+        border-radius: 5px;
+    }
+    .track-it button{
+        margin-top: 10px;
+        margin-left: 250px;
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+    }
 }
 
